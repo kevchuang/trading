@@ -15,6 +15,9 @@ package object domain:
   opaque type CorrelationId = UUID :| Pure
   object CorrelationId extends RefinedTypeOps[UUID, Pure, CorrelationId]
 
+  opaque type EventId = UUID :| Pure
+  object EventId extends RefinedTypeOps[UUID, Pure, EventId]
+  
   opaque type Price = BigDecimal :| Positive
   object Price extends RefinedTypeOps[BigDecimal, Positive, Price]
 
