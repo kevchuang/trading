@@ -17,3 +17,6 @@ lazy val domain = (project in file("modules/domain"))
       Libraries.ironCats
     )
   )
+
+lazy val lib = (project in file("modules/lib"))
+  .settings(commonSettings)
